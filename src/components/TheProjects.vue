@@ -12,7 +12,7 @@ const getImgUrl = (img) => {
     <div id="projects-grid">
       <!-- <ul>
         <li v-for="(project, index) in projects" :key="index"> -->
-      <div class="project" v-for="(project, index) in projects" :key="index">
+      <div class="project hvr-float" v-for="(project, index) in projects" :key="index">
         <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
         <div class="details">
           <a class="title" :href="project.link || project.gitLink" target="_blank">

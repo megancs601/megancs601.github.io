@@ -1,9 +1,2 @@
 @import './base.css';
-
-.content {
-  position: relative;
-  margin: 0 auto;
-  padding-top: 4em;
-  width: 100%;
-  overflow: hidden;
-}
+@import './hover.css';
