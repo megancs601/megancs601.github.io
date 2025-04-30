@@ -1,9 +1,9 @@
 <script setup>
-import projects from '../projects.json'
+import projects from '../projects.json';
 
 const getImgUrl = (img) => {
-  return new URL(`../assets/${img}`, import.meta.url).href
-}
+  return new URL(`../assets/${img}`, import.meta.url).href;
+};
 </script>
 
 <template>

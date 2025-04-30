@@ -2,7 +2,7 @@
 defineProps({
   clickHandler: { type: Function, required: false },
   focusHandler: { type: Function, required: false },
-})
+});
 </script>
 
 <template>

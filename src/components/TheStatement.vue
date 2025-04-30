@@ -1,5 +1,5 @@
 <script setup>
-import FishIcon from './icons/IconFish.vue'
+import FishIcon from './icons/IconFish.vue';
 </script>
 <template>
   <div class="statement-grid">
