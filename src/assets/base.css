@@ -1,5 +1,5 @@
 /* color palette from <https://github.com/vuejs/theme> */
-:root {
+/* :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -19,10 +19,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+} */
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -56,9 +56,9 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
-}
+} */
 
-body {
+/* body {
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
@@ -83,4 +83,36 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen');
+
+:root {
+  --white: #fcfcfc;
+  --purple: #96a1d1;
+  --dark-purple: #4c51ab;
+  --grey: #545454;
+  --dark-grey: #333;
+  --waves: url('../assets/seigaiha.png');
+  --waves-light: url('../assets/seigaiha_white.png');
+  --lato: 'Lato', sans-serif;
+  --oxygen: 'Oxygen', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+  --paragraph-size: 1em;
+  --max-width: 68.125em;
+  --line-height: 1.7em;
+}
+
+body {
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-family: var(--oxygen);
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
 }
