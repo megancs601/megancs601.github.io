@@ -1,9 +1,8 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import TheHeader from './components/TheHeader.vue'
 import TheStatement from './components/TheStatement.vue'
 import TheProjects from './components/TheProjects.vue'
+import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
@@ -12,8 +11,10 @@ import TheProjects from './components/TheProjects.vue'
   </header>
   <main>
     <TheStatement />
-    <TheProjects />
-    <!-- <TheWelcome /> -->
+    <div id="content">
+      <TheProjects />
+    </div>
+    <TheFooter />
   </main>
 </template>
 
@@ -31,5 +32,13 @@ header {
   &.hide {
     top: -4em;
   }
+}
+
+#content {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 4em;
+  width: 100%;
+  overflow: hidden;
 }
 </style>

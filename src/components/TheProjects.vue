@@ -28,6 +28,14 @@ const getImgUrl = (img) => {
       <!-- </li>
       </ul> -->
     </div>
+    <div id="portfolio-wrap">
+      <p id="last-statement">
+        ...and last but not least, this web portfolio!
+        <a href="https://github.com/megancs601/megancs601.github.io" target="_blank">
+          (Source code)
+        </a>
+      </p>
+    </div>
   </div>
 </template>
 
@@ -119,6 +127,31 @@ h3 {
     .tag {
       margin: 0;
       margin-left: 8px;
+    }
+  }
+}
+
+#portfolio-wrap {
+  position: relative;
+  margin: 5em auto;
+  font-size: 1.125em;
+  font-family: var(--lato);
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  p {
+    color: var(--grey);
+  }
+
+  a {
+    color: var(--dark-purple);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--grey);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
     }
   }
 }
