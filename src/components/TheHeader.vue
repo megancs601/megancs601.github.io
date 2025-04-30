@@ -1,16 +1,23 @@
-<script setup></script>
+<script setup>
+defineProps({
+  clickHandler: { type: Function, required: false },
+  focusHandler: { type: Function, required: false },
+})
+</script>
 
 <template>
   <nav>
     <ul>
       <li>
-        <button id="projects">Projects</button>
+        <button id="projects" @click="clickHandler" @focus="focusHandler">Projects</button>
       </li>
       <li>
-        <button id="about-me">About Me</button>
+        <button id="about-me" @click="clickHandler" @focus="focusHandler">About Me</button>
       </li>
       <li>
-        <a href="media/smith_megan.pdf" target="_blank"> Resum&eacute; </a>
+        <a href="../assets/smith_megan.pdf" target="_blank" @focus="focusHandler">
+          Resum&eacute;
+        </a>
       </li>
     </ul>
   </nav>
