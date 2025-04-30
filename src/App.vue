@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import TheHeader from './components/TheHeader.vue'
 import TheStatement from './components/TheStatement.vue'
+import TheProjects from './components/TheProjects.vue'
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import TheStatement from './components/TheStatement.vue'
   </header>
   <main>
     <TheStatement />
+    <TheProjects />
     <!-- <TheWelcome /> -->
   </main>
 </template>

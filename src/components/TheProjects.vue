@@ -1,0 +1,125 @@
+<script setup>
+import projects from '../projects.json'
+
+const getImgUrl = (img) => {
+  return new URL(`../assets/${img}`, import.meta.url).href
+}
+</script>
+
+<template>
+  <div id="projects-wrap">
+    <h3>LET'S SEE THE PROJECTS</h3>
+    <div id="projects-grid">
+      <!-- <ul>
+        <li v-for="(project, index) in projects" :key="index"> -->
+      <div class="project" v-for="(project, index) in projects" :key="index">
+        <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
+        <div class="details">
+          <a class="title" :href="project.link || project.gitLink" target="_blank">
+            {{ project.name }}
+          </a>
+          <p class="description">{{ project.description }}</p>
+        </div>
+        <hr />
+        <div class="footer">
+          <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
+        </div>
+      </div>
+      <!-- </li>
+      </ul> -->
+    </div>
+  </div>
+</template>
+
+<style scoped>
+#projects-wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 0px 20px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+h3 {
+  position: relative;
+  margin: 5em auto;
+  color: var(--grey);
+}
+
+#projects-grid {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
+  column-gap: 30px;
+  row-gap: 55px;
+  z-index: 100;
+}
+
+.project {
+  background: var(--white);
+  background-image: var(--waves-light);
+  color: var(--grey);
+  box-shadow: 0px 0px 1em rgba(104, 104, 104, 0.4);
+  border-radius: 0.5em;
+
+  img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+
+  .details {
+    text-align: left;
+    font-size: var(--paragraph-size);
+    font-family: var(--open-sans);
+    padding: 20px;
+
+    .title {
+      margin: 0;
+      font-size: 1.1em;
+      color: var(--dark-purple);
+      text-decoration: none;
+      font-family: var(--oxygen);
+      font-weight: bold;
+      text-transform: capitalize;
+
+      &:hover {
+        color: var(--dark-grey);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 6px;
+      }
+    }
+
+    .description {
+      margin: 1em 0 0 0;
+      line-height: var(--line-height);
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 0 1em;
+  }
+
+  .footer {
+    display: flex;
+    padding: 1em;
+    justify-content: flex-end;
+    font-family: var(--lato);
+
+    .tag {
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+}
+</style>
