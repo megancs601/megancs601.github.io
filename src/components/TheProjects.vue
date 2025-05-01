@@ -9,33 +9,31 @@ const getImgUrl = (img) => {
 <template>
   <div id="projects-wrap">
     <h3>LET'S SEE THE PROJECTS</h3>
-    <div id="projects-grid">
-      <!-- <ul>
-        <li v-for="(project, index) in projects" :key="index"> -->
-      <div class="project hvr-float" v-for="(project, index) in projects" :key="index">
-        <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
-        <div class="details">
-          <a class="title" :href="project.link || project.gitLink" target="_blank">
-            {{ project.name }}
-          </a>
-          <p class="description">{{ project.description }}</p>
+    <ul id="projects-grid">
+      <li v-for="(project, index) in projects" :key="index">
+        <div class="project hvr-float">
+          <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
+          <div class="details">
+            <a class="title" :href="project.link || project.gitLink" target="_blank">
+              {{ project.name }}
+            </a>
+            <p class="description">{{ project.description }}</p>
+          </div>
+          <hr />
+          <div class="footer">
+            <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
+          </div>
         </div>
-        <hr />
-        <div class="footer">
-          <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
-        </div>
-      </div>
-      <!-- </li>
-      </ul> -->
-    </div>
-    <div id="portfolio-wrap">
-      <p id="last-statement">
-        ...and last but not least, this web portfolio!
-        <a href="https://github.com/megancs601/megancs601.github.io" target="_blank">
-          (Source code)
-        </a>
-      </p>
-    </div>
+      </li>
+    </ul>
+  </div>
+  <div id="portfolio-wrap">
+    <p id="last-statement">
+      ...and last but not least, this web portfolio!
+      <a href="https://github.com/megancs601/megancs601.github.io" target="_blank">
+        (Source code)
+      </a>
+    </p>
   </div>
 </template>
 
@@ -56,15 +54,17 @@ h3 {
 }
 
 #projects-grid {
+  width: 100%;
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: start;
   column-gap: 30px;
   row-gap: 55px;
   z-index: 100;
+  list-style: none;
 }
 
 .project {
@@ -134,10 +134,12 @@ h3 {
 #portfolio-wrap {
   position: relative;
   margin: 5em auto;
+  max-width: var(--max-width);
   font-size: 1.125em;
   font-family: var(--lato);
   font-weight: bold;
   letter-spacing: 2px;
+  text-align: center;
 
   p {
     color: var(--grey);
