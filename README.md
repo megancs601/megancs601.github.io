@@ -1,6 +1,7 @@
-# portfolio-vue
+# Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Repo that demonstrates my skills and showcases my projects over the years (professional and personal).
+This repo converted [my old portfolio](https://github.com/megancs601/old-megancs601.github.io) to now use the VueJS framework.
 
 ## Recommended IDE Setup
 
