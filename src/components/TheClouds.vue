@@ -45,13 +45,9 @@ onMounted(() => {
 </template>
 
 <style scoped>
-div {
-  width: 100%;
+#dark-clouds-grid {
   position: relative;
   margin: 0 auto;
-}
-
-#dark-clouds-grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-template-rows: auto auto;
@@ -82,7 +78,18 @@ div {
   justify-self: right;
 }
 
+.dark-cloud:nth-child(5) {
+  padding-left: 40px;
+}
+
 .dark-cloud:nth-child(6) {
   justify-self: center;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  #dark-clouds-grid {
+    display: none;
+  }
 }
 </style>
