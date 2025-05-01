@@ -5,6 +5,7 @@ import TheProjects from './components/TheProjects.vue';
 import TheFooter from './components/TheFooter.vue';
 
 import { onMounted, onUnmounted, ref } from 'vue';
+import TheClouds from './components/TheClouds.vue';
 
 const header = ref(null);
 const projects = ref(null);
@@ -47,8 +48,11 @@ onUnmounted(() => {
     <TheHeader :click-handler="navItemClickedHandler" :focus-handler="navItemFocusedHandler" />
   </header>
   <main>
-    <TheStatement />
     <div id="content">
+      <div id="clouds-animate1"></div>
+      <div id="clouds-animate2"></div>
+      <TheStatement />
+      <TheClouds />
       <div ref="projects">
         <TheProjects />
       </div>
@@ -81,5 +85,37 @@ header {
   padding-top: 4em;
   width: 100%;
   overflow: hidden;
+}
+
+#clouds-animate1 {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 210px;
+  background-image: url('assets/white_clouds_pattern1.png');
+  background-repeat: repeat-x;
+  animation: slide 120s linear infinite;
+  z-index: -1;
+}
+
+#clouds-animate2 {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 190px;
+  margin-top: 190px;
+  background-image: url('assets/white_clouds_pattern2.png');
+  background-repeat: repeat-x;
+  animation: slide 60s linear infinite;
+  z-index: -1;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0, 0;
+  }
+  100% {
+    background-position: 1152px, 0;
+  }
 }
 </style>
