@@ -1,5 +1,6 @@
 <template>
   <svg id="Figure" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 134 143.09">
+    <title>Portfolio Icon</title>
     <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
     <circle class="st2" cx="67" cy="76.09" r="65" />
     <g>

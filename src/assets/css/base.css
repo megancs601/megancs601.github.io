@@ -29,3 +29,9 @@ h3 {
   font-weight: bold;
   text-align: center;
 }
+
+.sr-only {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+}

@@ -17,10 +17,10 @@ const getImgUrl = (img) => {
             <a class="title" :href="project.link || project.gitLink" target="_blank">
               {{ project.name }}
             </a>
-            <p class="description">{{ project.description }}</p>
+            <p class="description" data-testid="description">{{ project.description }}</p>
           </div>
           <hr />
-          <div class="footer">
+          <div class="tags" data-testid="tags">
             <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
           </div>
         </div>
@@ -28,10 +28,10 @@ const getImgUrl = (img) => {
     </ul>
   </div>
   <div id="portfolio-wrap">
-    <p id="last-statement">
+    <p data-testid="portfolio">
       ...and last but not least, this web portfolio!
       <a href="https://github.com/megancs601/megancs601.github.io" target="_blank">
-        (Source code)
+        <span class="sr-only">Go to </span> (source code)
       </a>
     </p>
   </div>
@@ -118,7 +118,7 @@ h3 {
     margin: 0 1em;
   }
 
-  .footer {
+  .tags {
     display: flex;
     padding: 1em;
     justify-content: flex-end;
