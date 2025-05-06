@@ -13,7 +13,7 @@ const cloudsList = [
 ];
 
 const getImgUrl = (img) => {
-  return new URL(`../assets/clouds_dark/${img}`, import.meta.url).href;
+  return new URL(`../assets/img/clouds_dark/${img}`, import.meta.url).href;
 };
 
 const applyParallax = () => {

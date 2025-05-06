@@ -92,7 +92,7 @@ header {
   margin: 0 auto;
   width: 100%;
   height: 210px;
-  background-image: url('assets/white_clouds_pattern1.png');
+  background-image: url('assets/img/white_clouds_pattern1.png');
   background-repeat: repeat-x;
   animation: slide 120s linear infinite;
   z-index: -1;
@@ -104,7 +104,7 @@ header {
   width: 100%;
   height: 190px;
   margin-top: 190px;
-  background-image: url('assets/white_clouds_pattern2.png');
+  background-image: url('assets/img/white_clouds_pattern2.png');
   background-repeat: repeat-x;
   animation: slide 60s linear infinite;
   z-index: -1;
