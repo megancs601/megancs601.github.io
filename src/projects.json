@@ -1,5 +1,14 @@
 [
   {
+    "name": "drag'n drop",
+    "img": "dragndrop.jpg",
+    "link": "https://megancs601.github.io/dragndrop/",
+    "location": "Home",
+    "date": "April 2025",
+    "tags": ["Javascript", "HTML/CSS"],
+    "description": "A small personal research project to learn how drag and drop works for the web. Drag'n Drop also allowed me to learn how to copy strings to clipboard and to practice grid layout css."
+  },
+  {
     "name": "creatacard",
     "img": "cac_web.jpg",
     "link": "https://www.americangreetings.com/creatacard",

@@ -2,7 +2,7 @@
 import projects from '../projects.json';
 
 const getImgUrl = (img) => {
-  return new URL(`../assets/${img}`, import.meta.url).href;
+  return new URL(`../assets/img/${img}`, import.meta.url).href;
 };
 </script>
 

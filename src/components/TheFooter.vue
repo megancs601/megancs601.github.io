@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div id="about-me-wrap">
-      <img src="../assets/sesamayo.png" alt="drawing of megan smith" width="100" height="100" />
+      <img src="../assets/img/sesamayo.png" alt="drawing of megan smith" width="100" height="100" />
       <h3>ABOUT ME</h3>
       <p>
         Hi there! My name is Megan Smith and I'm a front-end software and web developer living in
@@ -29,7 +29,7 @@ footer {
   position: relative;
   margin: 0 auto;
   background-image: var(--waves);
-  padding: 2em 1em;
+  padding: 4em 1em;
 }
 
 #external-links {
