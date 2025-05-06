@@ -29,7 +29,7 @@ footer {
   position: relative;
   margin: 0 auto;
   background-image: var(--waves);
-  padding: 2em 1em;
+  padding: 4em 1em;
 }
 
 #external-links {
