@@ -13,12 +13,15 @@
     <div id="external-links">
       <a href="https://www.linkedin.com/in/mcsmith601" target="_blank">
         <i class="fab fa-linkedin fa-2x"></i>
+        <span class="sr-only">Go to LinkedIn</span>
       </a>
       <a href="https://github.com/megancs601" target="_blank">
         <i class="fab fa-github fa-2x"></i>
+        <span class="sr-only">Go to Github</span>
       </a>
       <a href="https://www.instagram.com/sesamayo/" target="_blank">
         <i class="fab fa-instagram fa-2x"></i>
+        <span class="sr-only">Go to Instagram</span>
       </a>
     </div>
   </footer>
@@ -30,6 +33,12 @@ footer {
   margin: 0 auto;
   background-image: var(--waves);
   padding: 4em 1em;
+}
+
+.sr-only {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
 }
 
 #external-links {
