@@ -1,9 +1,0 @@
-@import"https://fonts.googleapis.com/css?family=Lato|Oxygen";:root{--white: #fcfcfc;--purple: #96a1d1;--dark-purple: #4c51ab;--grey: #545454;--dark-grey: #333;--waves: url(/assets/seigaiha-DsL4xNos.png);--waves-light: url(/assets/seigaiha_white-QUufFmrh.png);--lato: "Lato", sans-serif;--oxygen: "Oxygen", sans-serif;--open-sans: "Open Sans", sans-serif;--paragraph-size: 1em;--max-width: 68.125em;--line-height: 1.7em}body{background-color:var(--white);padding:0;margin:0}h2,h3{font-family:var(--oxygen);letter-spacing:2px;font-weight:700;text-align:center}/*!
- * Hover.css (http://ianlunn.github.io/Hover/)
- * Version: 2.3.2
- * Author: Ian Lunn @IanLunn
- * Author URL: http://ianlunn.co.uk/
- * Github: https://github.com/IanLunn/Hover
-
- * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
- */.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px #0000;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-float:hover,.hvr-float:focus,.hvr-float:active{-webkit-transform:translateY(-8px);transform:translateY(-8px)}
