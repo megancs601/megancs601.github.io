@@ -35,12 +35,6 @@ footer {
   padding: 4em 1em;
 }
 
-.sr-only {
-  line-height: 0;
-  font-size: 0;
-  color: transparent;
-}
-
 #external-links {
   position: relative;
   margin: 0 auto;
