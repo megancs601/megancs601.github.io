@@ -11,6 +11,18 @@ This repo converted [my old portfolio](https://github.com/megancs601/old-megancs
 
 See [Vite Configuration Reference](https://vite.dev/config/).
 
+## Node Version Setup
+
+```sh
+# Install node version from .nvmrc file
+nvm install
+```
+
+```sh
+# Use node version from .nvmrc file
+nvm use
+```
+
 ## Project Setup
 
 ```sh
