@@ -19,10 +19,6 @@
         <i class="fab fa-github fa-2x"></i>
         <span class="sr-only">Go to Github</span>
       </a>
-      <a href="https://www.instagram.com/sesamayo/" target="_blank">
-        <i class="fab fa-instagram fa-2x"></i>
-        <span class="sr-only">Go to Instagram</span>
-      </a>
     </div>
   </footer>
 </template>
