@@ -36,7 +36,7 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 15em;
+  width: 8em;
   margin-top: 2.5em;
 
   .fab {
