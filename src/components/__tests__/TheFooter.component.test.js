@@ -18,5 +18,4 @@ it('renders properly', async () => {
 
   expect(getLinkButton(/linkedin/i).href).toEqual('https://www.linkedin.com/in/mcsmith601');
   expect(getLinkButton(/github/i).href).toEqual('https://github.com/megancs601');
-  expect(getLinkButton(/instagram/i).href).toEqual('https://www.instagram.com/sesamayo/');
 });

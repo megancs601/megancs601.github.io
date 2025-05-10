@@ -1,0 +1,8 @@
+
+echo "🧪 Running Tests..."
+npx vitest run
+
+# run e2e test?
+# echo "" # Adds an empty line
+# echo "🎭 e2e Tests..."
+# npm playwright test

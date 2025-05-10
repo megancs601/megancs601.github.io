@@ -6,6 +6,7 @@ const renderPage = () => {
   return render(TheStatement);
 };
 
+// eslint-disable-next-line
 it('renders properly', () => {
   renderPage();
 

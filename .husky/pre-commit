@@ -1,0 +1,7 @@
+echo "✅ Running ESLint..."
+npx eslint .
+
+echo "" # Adds an empty line
+
+echo "✨ Running Prettier..."
+npx prettier --check .
