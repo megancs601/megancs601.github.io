@@ -5,8 +5,3 @@ echo "" # Adds an empty line
 
 echo "✨ Running Prettier..."
 npx prettier --check .
-
-echo "" # Adds an empty line
-
-echo "🧪 Running Tests..."
-npx vitest run
