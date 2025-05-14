@@ -16,9 +16,7 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ```sh
 # Install node version from .nvmrc file
 nvm install
-```
 
-```sh
 # Use node version from .nvmrc file
 nvm use
 ```
