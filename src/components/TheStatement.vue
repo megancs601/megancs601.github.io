@@ -1,33 +1,52 @@
-<script setup>
-import FishIcon from './icons/IconFish.vue';
-</script>
+<script setup></script>
 <template>
-  <div class="statement-grid">
-    <FishIcon />
-    <h3>A front-end software and web developer to make life a little easier :)</h3>
+  <div id="statement">
+    <h1>Hello! I am <span class="cursive">Megan Smith</span></h1>
+    <h3>
+      A <span class="underline">front-end web developer</span> striving to create digital
+      experiences through clean code and automated tests.
+    </h3>
   </div>
 </template>
 
 <style scoped>
-.statement-grid {
-  position: relative;
-  margin: 0 auto;
-  margin-top: 8em;
-  margin-bottom: 2em;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-items: center;
+.cursive {
+  font-size: 1.5em;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+  font-style: italic;
 }
 
-svg {
-  width: 8em;
-  height: auto;
+#statement {
+  padding: 0 1em;
+  margin-top: 8em;
+  margin-bottom: 3em;
+}
+
+h1,
+h3 {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  color: var(--dark-purple);
+  line-height: var(--line-height);
 }
 
 h3 {
-  padding: 0 1em;
-  color: var(--dark-purple);
-  line-height: var(--line-height);
+  margin-top: 1em;
+  max-width: 35em;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+
+  .cursive {
+    font-weight: 600;
+  }
 }
 </style>

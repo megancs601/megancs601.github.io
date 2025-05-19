@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Lato|Oxygen|Caveat');
 
 :root {
   --white: #fcfcfc;
@@ -22,16 +22,34 @@ body {
   margin: 0;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--lato);
+}
+
 h2,
 h3 {
   font-family: var(--oxygen);
-  letter-spacing: 2px;
-  font-weight: bold;
-  text-align: center;
 }
 
 .sr-only {
   line-height: 0;
   font-size: 0;
   color: transparent;
+}
+
+.underline {
+  text-decoration: dotted underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.bold {
+  font-weight: bold;
 }

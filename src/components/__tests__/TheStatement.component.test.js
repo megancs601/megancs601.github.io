@@ -10,6 +10,6 @@ const renderPage = () => {
 it('renders properly', () => {
   renderPage();
 
-  screen.getByTitle(/portfolio icon/i);
-  screen.getByRole('heading', { level: 3, name: /A front-end software and web developer/i });
+  screen.getByRole('heading', { level: 1, name: /megan smith/i });
+  screen.getByRole('heading', { level: 3, name: /A front-end web developer/i });
 });
