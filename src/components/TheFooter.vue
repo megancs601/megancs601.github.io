@@ -5,7 +5,7 @@
       <h3>ABOUT ME</h3>
       <p>
         If I am right for you, shoot me a message at
-        <span class="underline bold">megan.cs601@gmail.com</span> or connect with me on
+        <span class="underline bold">mcsmith601.dev@gmail.com</span> or connect with me on
         <a
           id="inline-link"
           class="underline bold"
