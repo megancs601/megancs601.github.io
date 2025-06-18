@@ -1,12 +1,23 @@
 [
   {
+    "name": "postqi",
+    "wip": true,
+    "img": "postqi.jpg",
+    "link": "https://megancs601.github.io/Postqi/",
+    "location": "Home",
+    "date": "April 2025",
+    "tags": ["React", "Redux", "TypeScript", "TailwindCSS"],
+    "gitLink": "https://github.com/megancs601/Postqi/tree/develop",
+    "description": "Postqi is a user-friendly project management application built around the Kanban methodology. It was designed with newcomers in mind, making it easy for users to understand and adopt the workflow process."
+  },
+  {
     "name": "drag'n drop",
     "img": "dragndrop.jpg",
     "link": "https://megancs601.github.io/dragndrop/",
     "location": "Home",
     "date": "April 2025",
     "tags": ["Javascript", "HTML/CSS"],
-    "description": "A small personal research project to learn how drag and drop works for the web. Drag'n Drop also allowed me to learn how to copy strings to clipboard and to practice grid layout css."
+    "description": "A hands-on project exploring native drag-and-drop, clipboard interactions, image URL validation, and CSS Grid layout."
   },
   {
     "name": "creatacard",
