@@ -14,9 +14,12 @@ const getImgUrl = (img) => {
         <div class="project hvr-float">
           <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
           <div class="details">
-            <a class="title" :href="project.link || project.gitLink" target="_blank">
-              {{ project.name }}
-            </a>
+            <div class="header">
+              <a class="title" :href="project.link || project.gitLink" target="_blank">
+                {{ project.name }}
+              </a>
+              <p v-if="project.wip" id="wip">(work in progress)</p>
+            </div>
             <p class="description" data-testid="description">{{ project.description }}</p>
           </div>
           <hr />
@@ -88,6 +91,10 @@ h3 {
     font-family: var(--open-sans);
     padding: 20px;
 
+    .header {
+      display: inline-flex;
+    }
+
     .title {
       margin: 0;
       font-size: 1.1em;
@@ -103,6 +110,14 @@ h3 {
         text-decoration-thickness: 2px;
         text-underline-offset: 6px;
       }
+    }
+
+    #wip {
+      font-style: italic;
+      padding: 0;
+      margin: 0;
+      margin-left: 8px;
+      margin-top: 4px;
     }
 
     .description {
