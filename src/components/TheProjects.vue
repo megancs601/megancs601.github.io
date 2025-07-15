@@ -9,26 +9,30 @@ const getImgUrl = (img) => {
 <template>
   <div id="projects-wrap">
     <h3>LET'S SEE THE PROJECTS</h3>
-    <ul id="projects-grid">
-      <li v-for="(project, index) in projects" :key="index">
-        <div class="project hvr-float">
-          <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
-          <div class="details">
-            <div class="header">
-              <a class="title" :href="project.link || project.gitLink" target="_blank">
-                {{ project.name }}
-              </a>
-              <p v-if="project.wip" id="wip">(work in progress)</p>
+    <div v-for="(category, index) in projects" :key="index">
+      <h4>{{ category.type }}</h4>
+      <hr />
+      <ul id="projects-grid">
+        <li v-for="(project, projectIndex) in category.projects" :key="projectIndex">
+          <div class="project hvr-float">
+            <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
+            <div class="details">
+              <div class="header">
+                <a class="title" :href="project.link || project.gitLink" target="_blank">
+                  {{ project.name }}
+                </a>
+                <p v-if="project.wip" id="wip">(work in progress)</p>
+              </div>
+              <p class="description" data-testid="description">{{ project.description }}</p>
             </div>
-            <p class="description" data-testid="description">{{ project.description }}</p>
+            <hr />
+            <div class="tags" data-testid="tags">
+              <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
+            </div>
           </div>
-          <hr />
-          <div class="tags" data-testid="tags">
-            <p class="tag" v-for="(tag, index) in project.tags" :key="index">{{ tag }}</p>
-          </div>
-        </div>
-      </li>
-    </ul>
+        </li>
+      </ul>
+    </div>
   </div>
   <div id="portfolio-wrap">
     <p data-testid="portfolio">
@@ -54,6 +58,22 @@ h3 {
   position: relative;
   margin: 5em auto;
   color: var(--grey);
+}
+
+h4 {
+  text-align: left;
+  text-transform: capitalize;
+  color: var(--dark-purple);
+  margin-top: 3em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #ccc, #ccc);
+
+  margin-bottom: 3em;
 }
 
 #projects-grid {
