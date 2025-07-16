@@ -11,6 +11,16 @@
     "description": "Postqi is a user-friendly project management application built around the Kanban methodology. It was designed with newcomers in mind, making it easy for users to understand and adopt the workflow process."
   },
   {
+    "name": "Simple Book API",
+    "img": "book_api.jpg",
+    "link": "https://megancs601.github.io/simple-book-api/",
+    "location": "Home",
+    "date": "July 2025",
+    "tags": ["Vue.js", "Express.js", "TailwindCSS", "PostgresSQL"],
+    "gitLink": "https://github.com/megancs601/simple-book-api",
+    "description": "A simple full-stack web application for managing a list of personal book library. Application allows user to add, edit, and delete books from a database."
+  },
+  {
     "name": "drag'n drop",
     "img": "dragndrop.jpg",
     "link": "https://megancs601.github.io/dragndrop/",
