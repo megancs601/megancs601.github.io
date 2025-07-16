@@ -1,17 +1,19 @@
 <script setup>
 import projects from '../projects.json';
+import { ref } from 'vue';
 
 const getImgUrl = (img) => {
   return new URL(`../assets/img/${img}`, import.meta.url).href;
 };
+
+const isProfessionalMode = ref(true);
 </script>
 
 <template>
   <div id="projects-wrap">
-    <h3>LET'S SEE THE PROJECTS</h3>
+    <h4>Experience</h4>
     <div v-for="(category, index) in projects" :key="index">
-      <h4>{{ category.type }}</h4>
-      <hr />
+      <h2>{{ category.type }}</h2>
       <ul id="projects-grid">
         <li v-for="(project, projectIndex) in category.projects" :key="projectIndex">
           <div class="project hvr-float">
@@ -54,26 +56,20 @@ const getImgUrl = (img) => {
   text-align: center;
 }
 
-h3 {
+h4 {
+  text-transform: uppercase;
+  text-align: left;
   position: relative;
-  margin: 5em auto;
+  margin-top: 5em;
   color: var(--grey);
+  font-weight: 100;
 }
 
-h4 {
+h2 {
   text-align: left;
   text-transform: capitalize;
   color: var(--dark-purple);
-  margin-top: 3em;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #ccc, #ccc);
-
-  margin-bottom: 3em;
+  font-weight: 700;
 }
 
 #projects-grid {
