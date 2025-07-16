@@ -16,7 +16,7 @@
     "link": "https://megancs601.github.io/simple-book-api/",
     "location": "Home",
     "date": "July 2025",
-    "tags": ["Vue.js", "Express.js", "TailwindCSS", "PostgresSQL"],
+    "tags": ["Vue.js", "Express.js", "TailwindCSS", "PostgreSQL"],
     "gitLink": "https://github.com/megancs601/simple-book-api",
     "description": "A simple full-stack web application for managing a list of personal book library. Application allows user to add, edit, and delete books from a database."
   },

@@ -3,8 +3,8 @@
   <div id="statement">
     <h1>Hello! I am <span class="cursive">Megan Smith</span></h1>
     <h3>
-      A <span class="underline">front-end web developer</span> striving to create digital
-      experiences through clean code and automated tests.
+      A <span class="underline">frontend developer</span> who bridges design and development by
+      turning UI concepts into responsive, testable, and accessible web applications.
     </h3>
   </div>
 </template>
