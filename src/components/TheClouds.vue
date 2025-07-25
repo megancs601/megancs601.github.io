@@ -1,45 +1,23 @@
 <script setup>
-import { onMounted, ref } from 'vue';
-import SimpleParallax from 'simple-parallax-js/vanilla';
+import { ref } from 'vue';
 
 const cloudRefs = ref([]);
-const cloudsList = [
-  { name: 2, orientation: 'left', scale: 2.3 },
-  { name: 4, orientation: 'left' },
-  { name: 1, orientation: 'right', scale: 2.3 },
-  { name: 6, orientation: 'right' },
-  { name: 7, orientation: 'right' },
-  { name: 7, orientation: 'left' },
-];
+const clouds = [2, 4, 1, 6, 7, 7];
 
 const getImgUrl = (img) => {
   return new URL(`../assets/img/clouds_dark/${img}`, import.meta.url).href;
 };
-
-const applyParallax = () => {
-  cloudRefs.value.forEach((cloud, index) => {
-    new SimpleParallax(cloud, {
-      orientation: cloudsList[index].orientation,
-      scale: cloudsList[index].scale || 1.4,
-      overflow: true,
-    });
-  });
-};
-
-onMounted(() => {
-  applyParallax();
-});
 </script>
 
 <template>
   <div id="dark-clouds-grid">
     <img
-      v-for="(cloud, index) in cloudsList"
+      v-for="(cloud, index) in clouds"
       :key="index"
       ref="cloudRefs"
       class="dark-cloud"
       alt="foreground cloud"
-      :src="getImgUrl(`clouds_dark-0${cloud.name}.png`)"
+      :src="getImgUrl(`clouds_dark-0${cloud}.png`)"
     />
   </div>
 </template>

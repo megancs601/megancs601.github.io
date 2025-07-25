@@ -49,8 +49,8 @@ onUnmounted(() => {
   </header>
   <main>
     <div id="content">
-      <div id="clouds-animate1"></div>
-      <div id="clouds-animate2"></div>
+      <div class="clouds" id="animate1"></div>
+      <div class="clouds" id="animate2"></div>
       <TheStatement />
       <TheClouds />
       <div ref="projects">
@@ -87,35 +87,35 @@ header {
   overflow: hidden;
 }
 
-#clouds-animate1 {
+.clouds {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  height: 210px;
-  background-image: url('assets/img/white_clouds_pattern1.png');
   background-repeat: repeat-x;
-  animation: slide 120s linear infinite;
   z-index: -1;
 }
 
-#clouds-animate2 {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
+#animate1 {
+  height: 210px;
+  background-image: url('assets/img/white_clouds_pattern1.png');
+  animation: scroll-clouds 120s linear infinite;
+}
+
+#animate2 {
   height: 190px;
   margin-top: 190px;
   background-image: url('assets/img/white_clouds_pattern2.png');
-  background-repeat: repeat-x;
-  animation: slide 60s linear infinite;
-  z-index: -1;
+  animation: scroll-clouds 60s linear infinite;
 }
 
-@keyframes slide {
+@keyframes scroll-clouds {
   0% {
-    background-position: 0, 0;
+    transform: translateX(0);
   }
   100% {
-    background-position: 1152px, 0;
+    transform: translateX(50%);
   }
 }
 </style>
