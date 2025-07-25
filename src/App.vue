@@ -99,23 +99,13 @@ header {
 
 #animate1 {
   height: 210px;
+  margin-top: 1em;
   background-image: url('assets/img/white_clouds_pattern1.png');
-  animation: scroll-clouds 120s linear infinite;
 }
 
 #animate2 {
   height: 190px;
-  margin-top: 190px;
+  margin-top: 13em;
   background-image: url('assets/img/white_clouds_pattern2.png');
-  animation: scroll-clouds 60s linear infinite;
-}
-
-@keyframes scroll-clouds {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50%);
-  }
 }
 </style>
