@@ -12,10 +12,22 @@ const getImgUrl = (img) => {
     <ul id="projects-grid">
       <li v-for="(project, index) in projects" :key="index">
         <div class="project hvr-float">
-          <img :src="getImgUrl(project.img)" :alt="`image of ${project.name} project`" />
+          <a
+            class="image-link"
+            :href="project.link || project.gitLink"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img :src="getImgUrl(project.img)" :alt="`Screenshot of ${project.name} project`" />
+          </a>
           <div class="details">
             <div class="header">
-              <a class="title" :href="project.link || project.gitLink" target="_blank">
+              <a
+                class="title"
+                :href="project.link || project.gitLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {{ project.name }}
               </a>
               <p v-if="project.wip" id="wip">(work in progress)</p>
@@ -76,6 +88,14 @@ h3 {
   color: var(--grey);
   box-shadow: 0px 0px 1em rgba(104, 104, 104, 0.4);
   border-radius: 0.5em;
+
+  .image-link {
+    display: flex;
+
+    &:focus-visible {
+      border-radius: 0.5em 0.5em 0 0;
+    }
+  }
 
   img {
     width: 100%;

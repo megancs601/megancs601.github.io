@@ -8,7 +8,7 @@
     "date": "April 2025",
     "tags": ["React", "Redux", "TypeScript", "TailwindCSS"],
     "gitLink": "https://github.com/megancs601/Postqi/tree/develop",
-    "description": "Postqi is a user-friendly project management application built around the Kanban methodology. It was designed with newcomers in mind, making it easy for users to understand and adopt the workflow process."
+    "description": "A user-friendly project management application built around the Kanban methodology. It was designed with newcomers in mind, making it easy for users to understand and adopt the workflow process."
   },
   {
     "name": "Simple Book API",
@@ -27,7 +27,7 @@
     "location": "Home",
     "date": "April 2025",
     "tags": ["Javascript", "HTML/CSS"],
-    "description": "A hands-on project exploring native drag-and-drop, clipboard interactions, image URL validation, and CSS Grid layout."
+    "description": "A practical project focused on native drag-and-drop for image files, clipboard integration, image URL validation."
   },
   {
     "name": "creatacard",
