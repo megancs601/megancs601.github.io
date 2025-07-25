@@ -15,7 +15,7 @@ defineProps({
         <button id="about-me" @click="clickHandler" @focus="focusHandler">About Me</button>
       </li>
       <li>
-        <a href="/smith_megan.pdf" target="_blank" rel="noopener" @focus="focusHandler">
+        <a href="/smith_megan.pdf" target="_blank" rel="noopener noreferrer" @focus="focusHandler">
           Resum&eacute;
         </a>
       </li>

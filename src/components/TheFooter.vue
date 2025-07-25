@@ -19,11 +19,11 @@
       </p>
     </div>
     <div id="external-links">
-      <a href="https://www.linkedin.com/in/mcsmith601" target="_blank">
+      <a href="https://www.linkedin.com/in/mcsmith601" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin fa-2x"></i>
         <span class="sr-only">Go to LinkedIn</span>
       </a>
-      <a href="https://github.com/megancs601" target="_blank">
+      <a href="https://github.com/megancs601" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-github fa-2x"></i>
         <span class="sr-only">Go to Github</span>
       </a>
