@@ -1,7 +1,4 @@
-echo "✅ Running ESLint..."
-npx eslint .
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
 
-echo "" # Adds an empty line
-
-echo "✨ Running Prettier..."
-npx prettier --check .
+npx lint-staged
