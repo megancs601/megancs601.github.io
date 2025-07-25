@@ -13,7 +13,8 @@
     "test:e2e": "playwright test",
     "lint": "eslint . --fix",
     "format": "prettier --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "vue": "^3.5.13"
