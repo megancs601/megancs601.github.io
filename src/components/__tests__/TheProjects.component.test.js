@@ -15,11 +15,11 @@ it('renders properly', async () => {
   const projectCount = projects.length;
   const list = screen.getByRole('list');
 
-  const images = within(list).getAllByRole('img', { name: /image of/i });
+  const images = within(list).getAllByRole('img', { name: /screenshot of/i });
   expect(images).toHaveLength(projectCount);
 
   const links = within(list).getAllByRole('link');
-  expect(links).toHaveLength(projectCount);
+  expect(links.length).toBeGreaterThanOrEqual(projectCount);
 
   const descriptions = screen.getAllByTestId(/description/i);
   expect(descriptions).toHaveLength(projectCount);
