@@ -14,7 +14,7 @@
         >
           Linkedin</a
         >. I currently live in New Hampshire with my two cats and long time partner. In my spare
-        time I enjoy playing JRPGs, reading fantasy books, and tending to my garden. Thanks for
+        time I enjoy crocheting, reading fantasy books, and tending to my garden. Thanks for
         visiting!
       </p>
     </div>
@@ -81,7 +81,6 @@ footer {
     font-size: var(--paragraph-size);
     letter-spacing: 1px;
     line-height: var(--line-height);
-    text-align: center;
   }
 
   img {
